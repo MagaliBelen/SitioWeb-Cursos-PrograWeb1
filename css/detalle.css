@@ -1,0 +1,328 @@
+/******CONTENIDO SUPERIOR *****
+********E IMAGEN PRINCIPAL DEL CURSO******/
+.contenido-principal {
+    display: grid;
+   grid-template-columns: 35% 60%;
+}
+.div-imagen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.imagen-curso {
+    max-width: 80%;
+    height: 300px;
+}
+.curso-detalle {
+    padding-top: 20px;
+}
+.curso-detalle li {
+    list-style: none;
+}
+.boton-inscribirse {
+    display: block;
+    margin: 20px 0;
+    width: 100px;
+    height: 25px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: var(--color-1);
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 10px 0px 10px;
+    transition: 0.4s;
+}
+.boton-inscribirse:hover {
+    background-color: var(--color-hv);
+
+}
+/******DIV******
+*****CONTENIDO DESPLEGABLE QUE INCLUYE CURSO*******/
+.accordion-menu{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    min-width: flex;
+    background-color: rgb(245, 238, 238);
+    box-shadow: 0px 0px 2px rgb(105, 105, 105);
+    cursor: pointer;
+}/*
+.curso-contenido {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    min-width: flex;
+    background-color: rgb(245, 238, 238);
+    box-shadow: 0px 0px 2px rgb(105, 105, 105);
+    cursor: pointer;
+}*/
+.submenuItems a {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 10px;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    color: #000;
+    background-color: rgba(196, 212, 255, 0.568);
+    border-bottom:2px solid #ccc;
+}
+.dropdown {
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+    position: relative;
+    transition: all 0.4s all;
+}
+
+.dropdown:hover,
+.submenuItems a:hover{
+    background-color: var(--color-1);
+    color: #fff;
+}
+.dropdown:hover .iconos,
+.submenuItems a:hover .iconos,
+.submenuItems a:hover .curso-tiempo{
+    color: #fff;
+}
+.accordion-menu li.active .dropdown  .flecha-abajo{
+    transform: rotate(-90deg);
+}
+.submenuItems {
+    display: none;
+    transition: all 2s ease-in-out;
+}
+
+.accordion-menu li.active .submenuItems{
+    display: block;
+}
+.curso-contenido-articulos {
+    display: block;
+    font-size: 13px;
+    padding: 10px;
+    color: #000;
+    border-bottom: 1px solid rgb(165, 163, 163);
+    transition: 0.4s;
+}
+.curso-contenido-articulos p {
+    display: block;
+    float: left;
+}
+.curso-tiempo {
+    display: block;
+    float: right;
+    color: gray;
+    transition: 0.4s;
+}
+.curso-sin-tiempo {
+    padding-right: 0px;
+}
+.move {
+    padding-right: 0px;
+}
+
+/********************ICONOS********** 
+WebSymbols incluidos en style.css*/
+.iconos {
+    font-family: "WebSymbolsRegular";
+}
+.verificado {
+    color: rgb(26, 192, 26);
+}
+.flecha-abajo {
+    display: block;
+    transform: rotate(90deg);
+    color: #000;
+    position: relative;
+    right: 15px;
+}
+.flecha-arriba {
+    display: block;
+    transform: rotate(-90deg);
+    color: #000;
+    position: relative;
+    right: 15px;
+}
+/*FINAL DE LA SECTION DEL CURSO*/
+/********************************/
+/*ASIDE PRESENTACION DEL DOCENTE*/
+.docente {
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.docente h2 {
+    padding: 10px;
+}
+.docente-contenedor {
+    display: flex;
+    background-color: var(--color-1);
+    flex-direction: row;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.docente-usuario {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 20px 30px 40px 30px;
+}
+.docente-presentacion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    padding-top: 20px;
+    color: rgba(238, 231, 231, 0.767);
+}
+.imagen-docente {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+.yellow {
+    color: rgb(190, 190, 46);
+}
+.white {
+    color: rgb(174, 177, 169);
+}
+.estrella {
+    display: block;
+}
+/***********************************/
+/**EN CURSO DESTACADO VER style.css*/
+
+
+
+
+@media screen and (min-width:64em){
+    .contenido-principal {
+    display: grid;
+       grid-template-columns: 35% 60%;
+    }
+    .div-imagen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .imagen-curso {
+        max-width: 80%;
+        height: 300px;
+    }
+    .curso-detalle {
+        padding-top: 20px;
+    }
+    .curso-detalle li {
+        list-style: none;
+    }
+}
+@media screen and (min-width:60em){
+    .contenido-principal {
+      display: grid;
+    grid-template-columns: 35% 60%;
+    }
+    .div-imagen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .imagen-curso {
+        max-width: 80%;
+        height: 300px;
+    }
+    .curso-detalle {
+        padding-top: 20px;
+    }
+    .curso-detalle li {
+        list-style: none;
+    }
+}
+@media screen and (max-width:1024px){
+    .contenido-principal {
+        display: grid;
+       grid-template-columns: 35% 60%;
+       grid-gap: 20px;
+    }
+    .div-imagen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .imagen-curso {
+        max-width: 90%;
+        height: 300px;
+    }
+    .curso-detalle {
+        padding-top: 20px;
+    }
+    .curso-detalle li {
+        list-style: none;
+    }
+}
+@media screen and (max-width:413px){
+    .contenido-principal {
+    display: block;
+    margin: auto;
+    }
+    .div-imagen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .imagen-curso {
+        max-width: 80%;
+        height: 300px;
+    }
+    .detalle-principal,
+    .boton-inscribirse,
+    .curso-principal{
+     display: block;
+     margin: auto;
+text-align: center;    }
+.boton-inscribirse{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    .accordion-menu{
+        margin: auto;
+        max-width: 80%;
+    }
+}
+@media screen and (max-width:912px){
+    .contenido-principal {
+        display: block;
+
+    }
+    .div-imagen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .imagen-curso {
+        max-width: 90%;
+        height: 300px;
+    }
+    .detalle-principal,
+    .boton-inscribirse,
+    .curso-principal{
+     display: block;
+     margin: auto;
+text-align: center;    }
+.boton-inscribirse{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    .accordion-menu{
+        margin: auto;
+        max-width: 80%;
+    }
+}

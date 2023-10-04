@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./css/giftcard.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="shortcut icon" href="./imagenes/conejo.png">
+    <title>Rhubbit || Inicio</title>
+</head>
+
+<body>
+    <header id="inicio">
+        <!-- 1era fila del header que contiene logo, busqueda y carro -->
+        <div class="header-primero">
+            <div id="logo">
+                <a href="./index.html"><img src="./imagenes/logo-rhubbit.png" alt="Logo"></a>
+            </div>
+            <div class="buscar">
+                <label>Buscar:</label>
+                <input type="text" name="buscador" id="buscador">
+                <div id="resultado">
+                </div>
+            </div>
+            <div class="carro">
+                <span id="abrir" class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+                <span id="contador">0</span>
+            </div>
+        </div>
+        <!-- Menu de navegacion, 2da fila del header -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./calendario.html">Calendario</a></li>
+                <li><a href="./giftcard.html">Gift Card</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Popups que aparecen al hacer clic sobre el contador -->
+
+        <div id="popup" class="hidden">
+            <h4>Cursos obtenidos:</h4>
+            <ul id="cursosList">
+            </ul>
+            <p id="mensajeVacio">Todavía no se obtuvieron cursos</p>
+            <button id="cerrarPopupBtn">Cerrar</button>
+        </div>
+
+    </header>
+    <!-- Main -->
+    <main>
+    <section class="contenedor">
+
+
+        <!--CONTENEDOR IZQUIERDA-->
+        <article class="giftcard">
+                <img src="./imagenes/logo-rhubbit.png" alt="Logo" class="logo">
+                <h2 class="titulo-giftcard">GIFT CARD para</h2>
+                <h1 class="titulo-destinatario">Destinatario</h1>
+                <p class="precio-giftcard">$5.000</p>
+        </article>
+
+
+        <!--CONTENEDOR DERECHA-->
+        <article class="personalizacion">
+            <form class="form">
+                <h3>Personalización de Giftcard</h3>
+                <input type="text" name="nombre" value="nombre" placeholder="Nombre Destinatario" id="nombre" class="input">
+
+                <p class="titulos">Color</p>
+                <!--------------------------
+                     COLORES CIRCULARES
+                ----------------------------->
+                <div class="colores">
+                    <div class="color">
+                        <div class="circulo-color celeste"></div>
+                        <input type="radio" name="color-letra" value="celeste-letra" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="circulo-color rojo"></div>
+                        <input type="radio" name="color-letra" value="rojo-letra" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="circulo-color azul"></div>
+                        <input type="radio" name="color-letra" value="azul-letra" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="circulo-color verde"></div>
+                        <input type="radio" name="color-letra" value="verde-letra" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="circulo-color rosa"></div>
+                        <input type="radio" name="color-letra" value="rosa-letra" class="radio-color">
+                    </div>
+                </div>
+
+                <p class="titulos">Tamaño de fuente</p>
+                <!--------------------------
+                     TAMAÑO DE LETRA
+                ----------------------------->
+                <div class="pixeles">
+                    <div class="pixel">
+                        <p class="pixel-veinte">20px</p>
+                        <input type="radio" name="pixel-letra" value="tamaño-20px" class="radio-pixel">
+                    </div>
+                    <div class="pixel">
+                        <p class="pixel-veintiocho">28px</p>
+                        <input type="radio" name="pixel-letra" value="tamaño-28px" class="radio-pixel">
+                    </div>
+                    <div class="pixel">
+                        <p class="pixel-treintaydos">32px</p>
+                        <input type="radio" name="pixel-letra" value="tamaño-32px" class="radio-pixel">
+                    </div>
+                    <div class="pixel">
+                        <p class="pixel-cuarentayocho">48px</p>
+                        <input type="radio" name="pixel-letra" value="tamaño-48px" class="radio-pixel">
+                    </div>
+                    <div class="pixel">
+                        <p class="pixel-sesenta">60px</p>
+                        <input type="radio" name="pixel-letra" value="tamaño-60px" class="radio-pixel">
+                    </div>
+                </div>
+                <!--------------------------
+                     MONTO
+                ----------------------------->
+                <div class="monto">
+                    <p>Monto $</p>
+                    <input type="number" name="monto" value="monto" id="monto" class="input-monto">
+                </div>
+
+                <p class="titulos">Ubicación</p>
+
+                <!--------------------------
+                    UBICACION DENTRO DE LA TARJETA
+                ----------------------------->
+                <div class="colocar">
+                    <div class="color">
+                        <div class="caja derecha">
+                            <div class="inferior"></div>
+                        </div>
+                        <input type="radio" name="ubicacion" value="derecha-abajo" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="caja izquierda">
+                            <div class="superior"></div>
+                        </div>
+                        <input type="radio" name="ubicacion" value="izquierda-arriba" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="caja derecha">
+                            <div class="superior"></div>
+                        </div>
+                        <input type="radio" name="ubicacion" value="derecha-arriba" class="radio-color">
+                    </div>
+                </div>
+
+                <!--------------------------
+                    FONDOS
+                ----------------------------->
+                <p class="titulos">Fondo</p>
+                <div class="colores">
+                    <div class="color">
+                        <div class="caja celeste"></div>
+                        <input type="radio" name="color-fondo" value="celeste" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="caja rojo"></div>
+                        <input type="radio" name="color-fondo" value="rojo" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="caja azul"></div>
+                        <input type="radio" name="color-fondo" value="azul" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="caja verde"></div>
+                        <input type="radio" name="color-fondo" value="verde" class="radio-color">
+                    </div>
+                    <div class="color">
+                        <div class="caja rosa"></div>
+                        <input type="radio" name="color-fondo" value="rosa" class="radio-color">
+                    </div>
+                </div>
+
+                <button class="boton-confirmar">Confirmar</button>
+
+            </form>
+        </article>
+        <a href="#inicio" class="arriba"></a>
+    </section>
+    </main>
+       <!-- Footer -->
+       <footer>
+
+        <!-- Menu de navegacion inferior -->
+        <div class="menu-inferior">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./.html">Cursos</a></li>
+                <li><a href="./calendario.html">Calendario</a></li>
+                <li><a href="./giftcard.html">Gift Card</a></li>
+                <li><a href="./inscripcion.html">Inscripcion</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- Redes sociales -->
+        <div class="redes">
+            <a href="#"><img src="./imagenes/icons8-facebook.svg" alt="icono de facebook"></a>
+            <a href="#"><img src="./imagenes/icons8-twitter.svg" alt="icono de twitter"></a>
+            <a href="#"><img src="./imagenes/icons8-instagram.svg" alt="icono de instagram"></a>
+            <a href="#"><img src="./imagenes/icons8-youtube-play.svg" alt="icono de youtube"></a>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.carousel').slick(
+                {
+                    arrows: false,
+                }
+            );
+        });
+    </script>
+    <script src="./js/buscador.js"></script>
+    <script src="./js/contador.js"></script>
+    <script src="./js/giftcard.js"></script>
+</body>
+</html>

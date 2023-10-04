@@ -1,0 +1,359 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+@font-face {
+  font-family: "WebSymbolsRegular";
+  src: url(../fonts/websymbols-regular-webfont.eot),
+    url(../fonts/websymbols-regular-webfont.eot?#iefix) format("embedded-opentype"),
+    /*para internet exporer*/
+    url(../fonts/websymbols-regular-webfont.woff) format("woff"),
+    url(../fonts/websymbols-regular-webfont.ttf) format("truetype"),
+    url(../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --color-1: #23587cad;
+  --color-hv:#1b445f;
+  --color-arriba: #23587c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Alata', sans-serif;
+}
+
+
+/************* HEADER **************/
+
+header {
+  background-color: white;
+  box-shadow: 0 4px 5px rgba(17, 17, 17, 0.342);
+  font-family: 'Alata', sans-serif;
+}
+
+.header-primero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+
+/*LOGO*/
+#logo img {
+  height: 125px;
+  width: 230px;
+}
+
+.iconos {
+  font-family: "WebSymbolsRegular";
+}
+
+/* BUSQUEDA */
+
+#buscador{
+  padding: 10px; 
+  border: 2px solid black;
+  width: 230px;
+  font-size: 14px;
+  height: 10px;
+  margin-top: 10px;
+}
+
+.buscar label{
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+#resultado{
+  margin-left: 63px;
+}
+
+/* CARRO DE COMPRAS */
+
+.carro {
+  display: flex;
+  align-items: flex-end;
+  
+}
+
+.material-symbols-outlined {
+  font-size: 40px !important;
+  color: black;
+}
+
+#contador {
+  background-color: rgb(199, 183, 183);
+  border-radius: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: black;
+  cursor: pointer;
+}
+
+/*MENU DE NAVEGACION*/
+
+nav ul {
+  padding: 0;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+nav a:hover {
+  background-color: var(--color-1);
+  color: #fff;
+}
+
+/*Responsive: Mobile Last*/
+/*Media Query = dispositivos medianos y chicos*/
+  /* 768px = 48em */
+  /* 420 px = 26.25em */
+@media screen and (max-width: 48em) {
+  .header-primero {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 26.25em) {
+  nav ul {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  nav li {
+    padding: 6px;
+  }
+
+  nav a {
+    padding: 8px;
+    border-radius: 3px;
+  }
+
+  .carro p {
+    font-size: 12px;
+  }
+
+  .buscar label {
+    font-size: 15px;
+  }
+
+  #buscador{
+    padding: 10px; 
+    border: 2px solid black;
+    width: 130px;
+    font-size: 14px;
+    height: 5px;
+    margin-top: 10px;
+  }
+
+}
+
+
+/**************** FOOTER *********************/
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  margin: 0;
+  box-shadow: 0px -5px 8px -5px rgba(0, 0, 0, 0.75);
+  font-family: 'Alata', sans-serif;
+  margin-top: 20px;
+}
+
+/*DATOS DEL GRUPO*/
+
+.datos-del-grupo {
+  padding-top: 8px;
+}
+
+.datos-del-grupo h3 {
+  margin: 0;
+  padding-bottom: 7px;
+}
+
+.datos-del-grupo ul {
+  list-style: none;
+}
+
+/*MENU INFERIOR*/
+
+.menu-inferior ul {
+  list-style: none;
+  padding-top: 10px;
+}
+
+.menu-inferior li {
+  padding: 5px;
+}
+
+.menu-inferior a {
+  text-decoration: none;
+  color: black;
+}
+
+/*REDES*/
+
+.redes img {
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+}
+
+/*Responsive: Mobile Last*/
+/*Media Query = dispositivos medianos y chicos*/
+  /* 768px = 48em */
+  /* 420 px = 26.25em */
+@media screen and (max-width: 48em) {
+  .redes img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .redes{
+    margin-top: 10px;
+  }
+
+  .datos-del-grupo h3{
+    font-size: 14px;
+  }
+  .datos-del-grupo ul li {
+    font-size: 12px;
+  }
+
+  .menu-inferior li {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 26.25em) {
+
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/*************BOTON ARRIBA***************/
+
+.arriba {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-arriba);
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-image: url(../imagenes/arriba.png);
+  background-size: cover;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.arriba:hover {
+
+  background-color: black;
+}
+
+/*Responsive: Mobile Last*/
+/*Media Query = dispositivos medianos y chicos*/
+  /* 768px = 48em */
+  /* 420 px = 26.25em */
+@media screen and (max-width: 48em) {
+  .arriba {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* POPUP DE CURSOS */
+
+.hidden {
+  display: none;
+}
+
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #23587c;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+#popup ul {
+  padding: 0;
+  margin: 0;
+}
+
+#popup ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+#cerrarPopupBtn {
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(129, 132, 158);
+  border-radius: 10%;
+  padding: 5px;
+  transition: 0.4s;
+}
+#cerrarPopupBtn:hover{
+  background-color: rgb(0, 0, 0);
+}
+
+/*Responsive: Mobile Last*/
+/*Media Query = dispositivos medianos y chicos*/
+  /* 768px = 48em */
+  /* 420 px = 26.25em */
+  @media screen and (max-width: 26.25em) {
+    #popup ul li {
+        font-size: 14px;
+      }
+
+      #cerrarPopupBtn{
+        font-size: 12px;
+      }
+  }

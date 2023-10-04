@@ -1,0 +1,335 @@
+:root {
+    --color-fondo-azul: rgb(24, 24, 168);
+    --color-fondo-rojo: rgb(165, 5, 5);
+    --color-fondo-celeste: rgba(153, 226, 202, 0.616);
+    --color-fondo-verde: rgb(10, 87, 10);
+    --color-fondo-rosa: rgb(202, 41, 235);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+/************************
+CONTENEDOR IZQUIERDA
+*************************/
+
+.giftcard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 50px;
+    background-color: var(--color-fondo-celeste);
+    box-shadow: 0px 0px 4px rgb(54, 54, 54),
+        0px 0px 1px rgb(54, 54, 54);
+    position: relative;
+}
+
+.logo {
+    margin-bottom: 80px;
+    width: 150px;
+    height: 80px;
+}
+
+.titulo-giftcard {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.titulo-destinatario {
+    text-align: center;
+    font-size: 35px;
+}
+
+.precio-giftcard {
+    background-color: var(--color-arriba);
+    color: #fff;
+    padding: 5px;
+    position: center;
+    font-size: 18px;
+}
+
+/*UBICACION DEL MONTO*/
+
+.derecha-abajo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.izquierda-arriba {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.derecha-arriba {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+/************************
+CONTENEDOR DERECHA
+*************************/
+.form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.personalizacion {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+.personalizacion h3 {
+    text-align: start;
+    margin: 10px 0;
+}
+
+.titulos {
+    margin: 15px 0 5px 0;
+}
+
+.input {
+    width: 300px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid rgb(172, 166, 166);
+    font-family: 'Alata', sans-serif;
+}
+
+.colores,
+.pixeles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 250px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.colocar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 180px;
+}
+
+.color,
+.pixel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.circulo-color {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: brown;
+    border: 1px saddlebrown;
+}
+
+.radio-color,
+.radio-pixel {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/************************
+COLORES CIRCULARES
+*************************/
+.azul {
+    background-color: var(--color-fondo-azul);
+}
+
+.rojo {
+    background-color: var(--color-fondo-rojo);
+}
+
+.celeste {
+    background-color: var(--color-fondo-celeste);
+}
+
+.verde {
+    background-color: var(--color-fondo-verde);
+}
+
+.rosa {
+    background-color: var(--color-fondo-rosa);
+}
+
+/************************
+TAMAÑO DE PIXEL
+*************************/
+.pixel-veinte {
+    font-size: 14x;
+}
+
+.pixel-veintiocho {
+    font-size: 15px;
+}
+
+.pixel-treintaydos {
+    font-size: 16px;
+}
+
+.pixel-cuarentayocho {
+    font-size: 17px;
+}
+
+.pixel-sesenta {
+    font-size: 18px;
+}
+
+.monto {
+    display: flex;
+    margin: 15px 0 5px 0;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+
+.input-monto {
+    width: 150px;
+    height: 22px;
+    border-radius: 7px;
+    border: 1px solid rgb(172, 166, 166);
+    font-family: 'Alata', sans-serif;
+}
+
+/************************
+UBICACION DENTRO DE LA TARJETA
+*************************/
+.caja {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(180, 178, 178);
+    display: flex;
+}
+
+.derecha {
+    justify-content: flex-end;
+}
+
+.inferior {
+    align-self: flex-end;
+    width: 20px;
+    height: 10px;
+    background-color: brown;
+}
+
+.superior {
+    width: 20px;
+    height: 10px;
+    background-color: brown;
+}
+
+
+/*BOTON*/
+.boton-confirmar {
+    width: 100px;
+    font-family: alata;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--color-1);
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.boton-confirmar:hover {
+    background-color: var(--color-hv);
+}
+
+
+/*TAMAÑO DE LETRA*/
+.tamaño-20px {
+    font-size: 20px;
+}
+
+.tamaño-28px {
+    font-size: 28px;
+}
+
+.tamaño-32px {
+    font-size: 32px;
+}
+
+.tamaño-48px {
+    font-size: 48px;
+}
+
+.tamaño-60px {
+    font-size: 60px;
+}
+
+/*COLORES DE LETRA*/
+.azul-letra {
+    color: var(--color-fondo-azul);
+}
+
+.rojo-letra {
+    color: var(--color-fondo-rojo);
+}
+
+.celeste-letra {
+    color: var(--color-fondo-celeste);
+}
+
+.verde-letra {
+    color: var(--color-fondo-verde);
+}
+
+.rosa-letra {
+    color: var(--color-fondo-rosa);
+}
+
+
+
+/*Responsive: Mobile Last*/
+/*Media Query = dispositivos medianos y chicos*/
+/* 768px = 48em */
+/* 420 px = 26.25em */
+
+@media (max-width: 48em) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+
+    .giftcard {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+    }
+
+    .personalizacion {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

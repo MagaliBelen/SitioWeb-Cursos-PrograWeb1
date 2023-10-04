@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="shortcut icon" href="./imagenes/conejo.png">
+    <title>Rhubbit || Contacto</title>
+</head>
+
+<body>
+    <header id="inicio">
+        <!-- 1era fila del header que contiene logo, busqueda y carro -->
+        <div class="header-primero">
+            <div id="logo">
+                <a href="./index.html"><img src="./imagenes/logo-rhubbit.png" alt="Logo"></a>
+            </div>
+            <div class="buscar">
+                <label>Buscar:</label>
+                <input type="text" name="buscador" id="buscador">
+                <div id="resultado">
+                </div>
+            </div>
+            <div class="carro">
+                <span id="abrir" class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+                <span id="contador">0</span>
+            </div>
+        </div>
+        <!-- Menu de navegacion, 2da fila del header -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./calendario.html">Calendario</a></li>
+                <li><a href="./giftcard.html">Gift Card</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Popups que aparecen al hacer clic sobre el contador -->
+
+        <div id="popup" class="hidden">
+            <h4>Cursos obtenidos:</h4>
+            <ul id="cursosList">
+            </ul>
+            <p id="mensajeVacio">Todavía no se obtuvieron cursos</p>
+            <button id="cerrarPopupBtn">Cerrar</button>
+        </div>
+
+    </header>
+    <!-- MAIN -->
+    <main>
+        <section class="contactos">
+            <article class="datos-del-usuario">
+                <h1>Contacto</h1>
+                <!-- Formulario que completara el usuario -->
+                <form action="#" method="get" enctype="application/x-www-form-urlencoded"
+                    class="formulario-de-contacto">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre y apellido">
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su telefono">
+                    <label for="consulta">Consulta</label>
+                    <textarea name="consulta" id="consulta" cols="30" rows="5" maxlength="1000"></textarea>
+                    <p id="contador-de-palabras"></p>
+                    <input id="submit" name="submit" type="submit" value="Enviar">
+                    <div id="mensaje-de-error"></div>
+                </form>
+
+            </article>
+
+            <!-- Popup que aparece una vez enviado el formulario -->
+            <article class="popup d-none">
+                <h2>Consulta enviada</h2>
+                <a href="./index.html" id="aceptar">Aceptar</a>
+            </article>
+
+            <!-- Los datos de contacto de nuestra plataforma -->
+            <article class="datos-de-empresa">
+                <h2>Nuestros datos de contacto</h2>
+                <ul>
+                    <li>Email: rhubbit@gmail.com</li>
+                    <li>Telefono: +54 9 112569586</li>
+                </ul>
+                <img src="./imagenes/dibujo-chica2.png" alt="Ilustracion">
+            </article>
+        </section>
+        <!-- Mapa de ubicacion -->
+        <div class="mapa">
+            <h3>Ubicacion</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.456632530742!2d-58.5628052!3d-34.6707576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1682975990750!5m2!1ses!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <a href="#inicio" class="arriba"></a>
+    </main>
+    <!-- Footer -->
+    <footer>
+
+        <!-- Menu de navegacion inferior -->
+        <div class="menu-inferior">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./.html">Cursos</a></li>
+                <li><a href="./calendario.html">Calendario</a></li>
+                <li><a href="./giftcard.html">Gift Card</a></li>
+                <li><a href="./inscripcion.html">Inscripcion</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- Redes sociales -->
+        <div class="redes">
+            <a href="#"><img src="./imagenes/icons8-facebook.svg" alt="icono de facebook"></a>
+            <a href="#"><img src="./imagenes/icons8-twitter.svg" alt="icono de twitter"></a>
+            <a href="#"><img src="./imagenes/icons8-instagram.svg" alt="icono de instagram"></a>
+            <a href="#"><img src="./imagenes/icons8-youtube-play.svg" alt="icono de youtube"></a>
+        </div>
+    </footer>
+    <script src="./js/contacto.js"></script>
+    <script src="./js/contador.js"></script>
+    <script src="./js/buscador.js"></script>
+</body>
+</html>

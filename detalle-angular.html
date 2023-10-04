@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./css/inicio.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detalle.css">
+    <link rel="stylesheet" href="./css/modal-detalle.css">
+    <link href="./css/uicons-solid-straight.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./imagenes/conejo.png">
+    <title>Rhubbit || Angular</title>
+</head>
+
+<body>
+    <header id="inicio">
+        <!-- 1era fila del header que contiene logo, busqueda y carro -->
+        <div class="header-primero">
+            <div id="logo">
+                <a href="./index.html"><img src="./imagenes/logo-rhubbit.png" alt="Logo"></a>
+            </div>
+            <div class="buscar">
+                <label>Buscar:</label>
+                <input type="text" name="buscador" id="buscador">
+                <div id="resultado">
+                </div>
+            </div>
+            <div class="carro">
+                <span id="abrir" class="material-symbols-outlined">
+                    shopping_cart
+                </span>
+                <span id="contador">0</span>
+            </div>
+        </div>
+        <!-- Menu de navegacion, 2da fila del header -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./calendario.html">Calendario</a></li>
+                <li><a href="./giftcard.html">Gift Card</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Popups que aparecen al hacer clic sobre el contador -->
+
+        <div id="popup" class="hidden">
+            <h4>Cursos obtenidos:</h4>
+            <ul id="cursosList">
+            </ul>
+            <p id="mensajeVacio">Todavía no se obtuvieron cursos</p>
+            <button id="cerrarPopupBtn">Cerrar</button>
+        </div>
+
+    </header>
+
+    <!--Contenido Principal-->
+    <section class="contenido-principal">
+
+        <div class="div-imagen">
+            <img class="imagen-curso" src="imagenes/angular.png" alt="">
+        </div>
+
+        <section class="modal">
+            <div class="modal__container">
+                <img src="imagenes/modal.svg" class="modal__img">
+                <h2 class="modal__title">¡Felicidades!</h2>
+                <p class="modal__paragraph"> Se a inscripto al curso de Angular</p>
+                <a href="inscripcion-angular.html" class="continuar"> Contituar</a>
+                <a href="#" class="modal__close">Cerrar</a>
+            </div>
+        </section>
+
+        <!--Detalle de Curso-->
+        <section class="curso-detalle">
+
+            <div class="detalle-principal">
+            <h2>ANGULAR</h2>
+            <ul>
+                <li>Valor: $40.000</li>
+                <li>Tiempo de dedicacion necesario: 80hs</li>
+                <li>Descripcion del curso:</li>
+                <li>Requisitos previos: Ninguno</li>
+            </ul>
+            <a class="boton-inscribirse comprar hero__cta" href="#">INSCRIBIRSE</a>
+            <script src="js/modal-detalle.js"></script>
+            </div>
+
+
+
+            <!--Contenido del curso-->
+            <div class="curso-principal">
+                <h2>CONTENIDOS POR CLASE</h2>
+                <ul class="accordion-menu">
+                    <li class="link">
+                        <div class="dropdown">
+                            INTRODUCCIÓN<span class="curso-tiempo curso-sin-tiempo"><span
+                                    class="iconos flecha-abajo">></span></span>
+
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#"><img src="imagenes/005-boton-de-play-2.png" alt=""> 1283-1 ¿Qué es un
+                                    lenguaje de programación?...
+                                    <span class="curso-tiempo"><span class="iconos">P</span> 10 min<span
+                                            class="iconos verificado">
+                                        </span></span></a>
+                            </li>
+                            <li><a href="#"><img src="imagenes/002-altavoz.png" alt=""> 283-2 Mi primer Script
+                                    <span class="curso-tiempo curso-sin-tiempo"><span class="iconos">P</span> 15
+                                        min</span></a>
+                            </li>
+                            <li><a href="#"><img src="imagenes/002-archivo-pdf.png" alt=""> 284-2 Conceptos
+                                    Básicos
+                                    <span class="curso-tiempo curso-sin-tiempo"><span class="iconos">P</span> 10
+                                        min</span></a></li>
+                            <li><a href="#"><img src="imagenes/003-cheque.png" alt=""> EXAMEN
+                                    <span class="curso-tiempo curso-sin-tiempo move"><span class="iconos">P</span> 15
+                                        min</span></a></li>
+
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <div class="dropdown">
+
+                            UNIDAD 2<span class="curso-tiempo curso-sin-tiempo"><span
+                                    class="iconos flecha-abajo">></span></span>
+
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#"><img src="imagenes/005-boton-de-play-2.png" alt=""> 1288-1 Funciones y Metodos...
+                                    <span class="curso-tiempo"><span class="iconos">P</span> 10 min<span
+                                            class="iconos verificado">
+                                        </span></span></a>
+                            </li>
+                            <li><a href="#"><img src="imagenes/002-altavoz.png" alt=""> 289-9 Arrays básicos
+                                    <span class="curso-tiempo curso-sin-tiempo"><span class="iconos">P</span> 15
+                                        min</span></a>
+                            </li>
+                            <li><a href="#"><img src="imagenes/003-cheque.png" alt=""> EXAMEN
+                                    <span class="curso-tiempo curso-sin-tiempo move"><span class="iconos">P</span> 15
+                                        min</span></a></li>
+
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <div class="dropdown">
+
+                            UNIDAD 3<span class="curso-tiempo curso-sin-tiempo"><span
+                                    class="iconos flecha-abajo">></span></span>
+
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#"><img src="imagenes/005-boton-de-play-2.png" alt=""> 1555-3 DOM - Document Object Model...
+                                    <span class="curso-tiempo"><span class="iconos">P</span> 10 min<span
+                                            class="iconos verificado">
+                                        </span></span></a>
+                            </li>
+                            <li><a href="#"><img src="imagenes/002-altavoz.png" alt=""> 211-2 Query Selector 
+                                    <span class="curso-tiempo curso-sin-tiempo"><span class="iconos">P</span> 15
+                                        min</span></a>
+                            <li><a href="#"><img src="imagenes/003-cheque.png" alt=""> EXAMEN
+                                    <span class="curso-tiempo curso-sin-tiempo move"><span class="iconos">P</span> 15
+                                        min</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+               
+                <!--Fin de Contenido del curso-->
+            </div>
+            <script src="js/detalle-desplegable.js"></script>
+            
+        </section>
+        <!--Fin Detalle de Curso-->
+    </section>
+    <!--Fin de Contenido Principal-->
+
+    <aside class="docente">
+        <h2>DOCENTE</h2>
+        <div class="docente-contenedor">
+            <div class="docente-usuario">
+                <img src="imagenes/imagen-docente.jpg" class="imagen-docente" alt="">
+            </div>
+            <div class="docente-presentacion">
+                <h3>NOMBRE Y APELLIDO</h3>
+                <p>
+                    <span class="estrella">
+                        <span class="fi fi-ss-star yellow"></span>
+                        <span class="fi fi-ss-star yellow"></span>
+                        <span class="fi fi-ss-star yellow"></span>
+                        <span class="fi fi-ss-star yellow"></span>
+                        <span class="fi fi-ss-star white"></span>
+                    </span>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste impedit quis fuga? Quo ipsa,
+                    tenetur tempora libero fuga, laudantium obcaecati officiis reiciendis exercitationem ea corporis
+                    dicta nemo odit enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste impedit
+                    quis fuga? Quo ipsa,
+                    tenetur tempora libero fuga, laudantium obcaecati officiis reiciendis exercitationem ea corporis
+                    dicta nemo odit enim.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste impedit quis fuga? Quo ipsa,
+                    tenetur tempora libero fuga, laudantium obcaecati officiis reiciendis exercitationem ea corporis
+                    dicta nemo odit enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste impedit
+                    quis fuga? Quo ipsa,
+                    tenetur tempora libero fuga, laudantium obcaecati officiis reiciendis exercitationem ea corporis
+                    dicta nemo odit enim.</p>
+            </div>
+        </div>
+
+        <!--Curso relacionado-->
+        <article class="cursos-destacados">
+            <div class="curso">
+                <img src="./imagenes/html-css-curso.png" alt="HTML y CSS">
+                <h4>HTML y CSS</h4>
+                <p>32hs</p>
+                <p class="precio">$30.000</p>
+                <a href="detalle-html.html">
+                    <p class="detalle">Ver detalle</p>
+                </a>
+                <button class="comprarBtn">Comprar</button>
+            </div>
+            <div class="curso">
+                <img src="./imagenes/phyton.jpg" alt="Python">
+                <h4>Python</h4>
+                <p>30hs</p>
+                <p class="precio">$28.000</p>
+                <a href="detalle-phyton.html">
+                    <p class="detalle">Ver detalle</p>
+                </a>
+                <button class="comprarBtn">Comprar</button>
+            </div>
+            <div class="curso">
+                <img src="./imagenes/angular.png" alt="Angular">
+                <h4>Angular</h4>
+                <p>32hs</p>
+                <p class="precio">$20.000</p>
+                <a href="detalle-angular.html">
+                    <p class="detalle">Ver detalle</p>
+                </a>
+                <button class="comprarBtn">Comprar</button>
+            </div>
+            <div class="curso">
+                <img src="./imagenes/react.png" alt="React">
+                <h4>React</h4>
+                <p>40hs</p>
+                <p class="precio">$30.000</p>
+                <a href="detalle-react.html">
+                    <p class="detalle">Ver detalle</p>
+                </a>
+                <button class="comprarBtn">Comprar</button>
+            </div>
+            <script src="./js/contador.js"></script>
+        </article>
+        </div>
+    </aside>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Menu de navegacion inferior -->
+        <div class="menu-inferior">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./.html">Cursos</a></li>
+                <li><a href="./calendario.html">Calendario</a></li>
+                <li><a href="./giftcard.html">Gift Card</a></li>
+                <li><a href="./inscripcion.html">Inscripcion</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- Redes sociales -->
+        <div class="redes">
+            <a href="#"><img src="./imagenes/icons8-facebook.svg" alt="icono de facebook"></a>
+            <a href="#"><img src="./imagenes/icons8-twitter.svg" alt="icono de twitter"></a>
+            <a href="#"><img src="./imagenes/icons8-instagram.svg" alt="icono de instagram"></a>
+            <a href="#"><img src="./imagenes/icons8-youtube-play.svg" alt="icono de youtube"></a>
+        </div>
+    </footer>
+    <script src="./js/buscador.js"></script>
+</body>
+
+</html>

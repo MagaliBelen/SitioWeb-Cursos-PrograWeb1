@@ -1,0 +1,242 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+:root{
+    --color-1:#23587cad;
+    --color-error: rgb(196, 27, 27);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+}
+
+.contactos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+
+/*Datos de contacto del usuario*/
+
+.datos-del-usuario{
+    margin: auto;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.formulario-de-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+
+}
+
+#nombre, #correo, #telefono{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 250px;
+
+}
+
+textarea {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    width: 280px;
+}
+
+
+#submit {
+        width: 120px;
+        height: 35px;
+        margin-top: 20px;
+        font-family: alata;
+        text-align: center;
+        color: #ffffff;
+        background-color: var(--color-1);
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        padding: 5px;
+        cursor: pointer;
+        transition: 0.4s;
+}
+
+#submit:hover{
+    background-color: var(--color-hv);
+}
+
+
+#nombre{
+    background-image: url(../imagenes/icons8-usuario-masculino.svg);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    padding: 10px 20px 5px 35px;
+    background-position: left center;
+}
+
+#correo{
+    background-image: url(../imagenes/icons8-mail.svg);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    padding: 10px 20px 5px 35px;
+    background-position: left center;
+}
+
+#telefono{
+    background-image: url(../imagenes/icons8-phone.svg);
+    background-repeat: no-repeat;
+    background-size: 8%;
+    padding: 10px 20px 5px 35px;
+    background-position: left center;
+}
+
+#mensaje-de-error{
+    color:var(--color-error);
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+#contador-de-palabras{
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+/*Datos de contacto de la empresa*/
+
+
+h2 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.datos-de-empresa{
+    text-align: center;
+}
+
+.datos-de-empresa ul{
+    list-style: none;
+}
+
+.datos-de-empresa ul li{
+    padding: 10px;
+}
+
+
+.datos-de-empresa img{
+    width: 60%;
+    margin-top: 20px;
+
+}
+
+/*MAPA*/
+
+h3{
+    margin: 20px;
+}
+
+.mapa {
+    text-align: center;
+}
+
+iframe{
+    width: 80%;
+    height: 350px;
+}
+
+/*POPUP*/
+.popup{
+    background-color: #23587c;
+    color: white;
+    width: 40%;
+    height: 200px;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    top: 100px;
+}
+.popup h2{
+    margin-bottom: 50px;
+}
+
+.d-none{
+    display: none;
+}
+
+#aceptar{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(129, 132, 158);
+    border-radius: 10%;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+#aceptar:hover{
+background-color: rgb(0, 0, 0);
+}
+
+/*Responsive: Mobile Last*/
+/*Media Query = dispositivos medianos y chicos*/
+/*Media Query = dispositivos medianos y chicos*/
+  /* 768px = 48em */
+  /* 420 px = 26.25em */
+@media screen and (max-width:26.25em) {
+    h1{
+        font-size: 25px;
+        padding: 0;
+        margin:0;
+        margin-top:10px;
+    }
+
+    .popup h2{
+        font-size: 20px;
+    }
+
+    .popup{
+        width: 70%;
+        height: 170px;
+    }
+
+    #aceptar{
+        font-size: 14px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    #mensaje-de-error{
+        padding-top: 10px;
+        font-size: 13px;
+    }
+
+    label {
+        font-size: 15px;
+    
+    }
+
+    #contador-de-palabras{
+        font-size: 15px;
+    }
+
+    .datos-de-empresa ul li{
+        padding: 5px;
+        font-size: 15px;
+    
+    }
+}
